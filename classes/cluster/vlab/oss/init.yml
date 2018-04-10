@@ -1,5 +1,11 @@
 parameters:
   _param:
+<<<<<<< HEAD
      oss_node01_address: ${_param:stacklight_monitor_node01_address}
      oss_node02_address: ${_param:stacklight_monitor_node02_address}
      oss_node03_address: ${_param:stacklight_monitor_node03_address}
+=======
+    oss_node01_address: ${_param:stacklight_monitor_node01_address}
+    oss_node02_address: ${_param:stacklight_monitor_node02_address}
+    oss_node03_address: ${_param:stacklight_monitor_node03_address}
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7

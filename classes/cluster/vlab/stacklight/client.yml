@@ -11,6 +11,7 @@ classes:
 - system.docker.swarm.stack.monitoring.remote_agent
 - system.docker.swarm.stack.monitoring.remote_collector
 - system.docker.swarm.stack.monitoring.remote_agent.ceph_common
+<<<<<<< HEAD
 
 #- cluster.vlab.infra
 #- cluster.vlab.cicd.control
@@ -18,6 +19,10 @@ classes:
 parameters:
   _param:
     apt_mk_version: '2018.3.1'
+=======
+parameters:
+  _param:
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     docker_image_alertmanager: docker-prod-local.artifactory.mirantis.com/openstack-docker/alertmanager:${_param:apt_mk_version}
     docker_image_pushgateway: docker-prod-local.artifactory.mirantis.com/openstack-docker/pushgateway:${_param:apt_mk_version}
     docker_image_prometheus: docker-prod-local.artifactory.mirantis.com/openstack-docker/prometheus:${_param:apt_mk_version}

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
 classes:
 - system.linux.system.repo.mcp.extra
 - system.linux.system.repo.mcp.apt_mirantis.ubuntu

@@ -3,11 +3,19 @@ parameters:
     openstack_region: RegionOne
     admin_email: root@localhost
     openstack_version: ocata
+<<<<<<< HEAD
     ##Neutron osv/nodvr  dpdk
     neutron_global_physnet_mtu: 1500
     neutron_external_mtu: 1500
 
     neutron_enable_qos: False
+=======
+    ##Neutron osv/nodvr + dpdk
+    neutron_global_physnet_mtu: 1500
+    neutron_external_mtu: 1500
+
+    neutron_enable_qos: True
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     neutron_enable_vlan_aware_vms: False
     neutron_enable_bgp_vpn: False
     neutron_bgp_vpn_driver: bagpipe
@@ -48,7 +56,10 @@ parameters:
     aodh_version: ${_param:openstack_version}
     aodh_service_host: ${_param:openstack_control_address}
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     mysql_admin_user: root
     mysql_aodh_password: ${_param:mysql_aodh_password_generated}
     mysql_admin_password: ${_param:galera_server_admin_password}
@@ -80,6 +91,7 @@ parameters:
     mongodb_admin_password: ${_param:mongodb_admin_password_generated}
     mongodb_shared_key: ${_param:mongodb_shared_key_generated}
     metadata_password: ${_param:openstack_metadata_password_generated}
+<<<<<<< HEAD
 
     salt_pki_proxy_alt_names: IP:${_param:cluster_public_host},DNS:${_param:cluster_public_host},IP:${_param:openstack_proxy_address},DNS:horizon.${_param:cluster_domain}
     stacklight_notification_topic: stacklight_notifications
@@ -87,6 +99,12 @@ parameters:
     openstack_log_appender: true
     openstack_fluentd_handler_enabled: true
  
+=======
+    salt_pki_proxy_alt_names: IP:${_param:cluster_public_host},DNS:${_param:cluster_public_host},IP:${_param:openstack_proxy_address},DNS:horizon.${_param:cluster_domain}
+    stacklight_notification_topic: stacklight_notifications
+    openstack_notification_topics: "notifications,${_param:stacklight_notification_topic}"
+
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     # openstack service addresses
     openstack_proxy_address: 10.101.0.80
     openstack_proxy_node01_address: 10.101.0.81
@@ -116,9 +134,12 @@ parameters:
     openstack_compute_rack01_single_subnet: 10.101.0
     openstack_compute_rack01_tenant_subnet: 10.102.0
     openstack_compute_rack01_hostname: cmp
+<<<<<<< HEAD
     # Check tis if this comes mannualy 
     cmp_node01_hostname: cmp001
     cmp_node02_hostname: cmp002
+=======
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
 
     # openstack service hostnames
     openstack_proxy_hostname: prx

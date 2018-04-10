@@ -1,8 +1,14 @@
 classes:
 - system.docker.swarm.manager
+<<<<<<< HEAD
 - cluster.vlab.oss.server
 - system.docker.swarm.manager
 - cluster.vlab.stacklight.server
+=======
+- cluster.vlab.stacklight.server
+- system.docker.swarm.manager
+- cluster.vlab.oss.server
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
 parameters:
   _param:
     keepalived_vip_priority: 101

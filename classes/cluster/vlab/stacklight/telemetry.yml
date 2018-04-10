@@ -14,15 +14,25 @@ classes:
 - system.prometheus.server.target.federation
 - system.prometheus.server.target.federation.all_metrics
 - system.haproxy.proxy.listen.stacklight.prometheus_relay
+<<<<<<< HEAD
 - system.influxdb.database.prometheus
+=======
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
 - cluster.vlab.stacklight
 - cluster.vlab.infra
 - cluster.vlab.stacklight.networking.virtual
 parameters:
   _param:
+<<<<<<< HEAD
     keepalived_stacklight_telemetry_vip_address: ${_param:stacklight_telemetry_address}
     keepalived_stacklight_telemetry_vip_password: ${_param:stacklight_telemetry_keepalived_password}
     keepalived_stacklight_telemetry_vip_interface: ens3
+=======
+    keepalived_vip_interface: ens3
+    keepalived_stacklight_telemetry_vip_address: ${_param:stacklight_telemetry_address}
+    keepalived_stacklight_telemetry_vip_password: ${_param:stacklight_telemetry_keepalived_password}
+    keepalived_stacklight_telemetry_vip_interface: ${_param:keepalived_vip_interface}
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     cluster_vip_address: ${_param:stacklight_telemetry_address}
     cluster_local_address: ${_param:single_address}
     cluster_node01_hostname: ${_param:stacklight_telemetry_node01_hostname}

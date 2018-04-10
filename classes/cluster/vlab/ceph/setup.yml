@@ -5,56 +5,101 @@ parameters:
     setup:
       pool:
         images:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rbd
 #          crush_rule: sata (uncomment these lines if you setup crush map)
         volumes:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rbd
 #          crush_rule: sata
         vms:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rbd
 #          crush_rule: sata
         .rgw.root:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rgw
 #          crush_rule: sata
         default.rgw.control:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rgw
 #          crush_rule: sata
         default.rgw.meta:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rgw
 #          crush_rule: sata
         default.rgw.log:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rgw
 #          crush_rule: sata
         default.rgw.buckets.index:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rgw
 #          crush_rule: sata
         default.rgw.buckets.data:
+<<<<<<< HEAD
           pg_num: 64
           pgp_num: 64
+=======
+          pg_num: 128
+          pgp_num: 128
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
           type: replicated
           application: rgw
 #          crush_rule: sata

@@ -1,7 +1,11 @@
 parameters:
   _param:
     ceph_version: luminous
+<<<<<<< HEAD
     linux_repo_ceph_component: ${_param:ceph_version}
+=======
+
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     ceph_mon_node01_hostname: cmn01
     ceph_mon_node02_hostname: cmn02
     ceph_mon_node03_hostname: cmn03
@@ -20,6 +24,7 @@ parameters:
 
     ceph_osd_rack01_hostname: osd
 
+<<<<<<< HEAD
     
     #Ceph
     ceph_osd_node01_hostname: osd001
@@ -31,6 +36,8 @@ parameters:
 
 
 
+=======
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
     backend_vlan: 104
     ceph_cluster_fsid: ${_param:ceph_cluster_fsid_generated}
     ceph_osd_rack01_single_subnet: 10.101.0
@@ -74,6 +81,7 @@ parameters:
           names:
           - ${_param:ceph_rgw_node03_hostname}
           - ${_param:ceph_rgw_node03_hostname}.${_param:cluster_domain}
+<<<<<<< HEAD
 
         osd001:
           address: ${_param:ceph_osd_node01_address}
@@ -102,3 +110,5 @@ parameters:
           osd pool default size: 1
           osd pool default min size: 1
           mon allow pool delete: "true"
+=======
+>>>>>>> 1169223ea46f1a2fe34fd403f13d3e5ed766cdc7
